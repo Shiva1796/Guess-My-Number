@@ -30,6 +30,7 @@ check.addEventListener('click', function () {
   } else if (guess != secretNumber) {
     if (score > 0) {
       displayText(guess > secretNumber ? 'Too High! 📈' : 'Too Low! 📉');
+      score--;
       scoreText.textContent = score--;
     } else {
       displayText('You lost!👨🏻‍💻');
